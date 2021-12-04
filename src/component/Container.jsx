@@ -3,6 +3,7 @@ import Card from "./Card";
 import Chart from "./Chart";
 import Payement from "./Payement";
 import Money from "./Money";
+import Activity from "./Activity";
 
 const Container = () => {
   return (
@@ -18,7 +19,9 @@ const Container = () => {
           <Payement />
           <Money />
         </div>
-        <div className="bg-blue-400 w-5/12">fsdffsdfsd</div>
+        <div className="border-l-2 w-5/12">
+          <Activity />
+        </div>
       </div>
     </div>
   );

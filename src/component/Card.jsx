@@ -37,7 +37,7 @@ export default function Card() {
           return (
             <div
               key={i}
-              className="flex flex-col p-4 bg-white w-96 rounded-lg justify-between h-48 relative cursor-pointer mb-8"
+              className="flex flex-col p-4 bg-white w-96 rounded-lg justify-between h-48 relative cursor-pointer mb-8 shadow-lg"
               onClick={() => setChoose(i)}
             >
               <div className="flex flex-wrap">
