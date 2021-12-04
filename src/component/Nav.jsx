@@ -26,7 +26,7 @@ function Block({ isOpen, nav, onToggle, children }) {
   return (
     <div className="block">
       <button
-        className="toggle flex px-2 py-2 rounded hover:bg-gray-200 justify-between w-11/12  m-auto"
+        className="toggle flex px-2 py-2 rounded hover:bg-gray-200 justify-between w-11/12 m-auto"
         onClick={onToggle}
       >
         <div className="flex">
@@ -48,7 +48,7 @@ export default function Nav() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="border h-full flex flex-col justify-between pb-4">
+    <div className="h-full flex flex-col justify-between pb-4 fixed border w-1/6 ">
       <div>
         <div className="flex border m-3">
           <img src={logo} alt="" width={46} />
@@ -59,7 +59,7 @@ export default function Nav() {
             <Block
               key={i}
               nav={nav}
-              className=""
+              className="border"
               isOpen={state[i]}
               onToggle={() => dispatch({ type: "toggle", index: i })}
             >

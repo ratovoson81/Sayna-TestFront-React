@@ -8,7 +8,7 @@ function App() {
       <div className="w-1/6  h-screen">
         <Nav />
       </div>
-      <div className="bg-gray-100 w-full">
+      <div className="bg-gray-100 w-5/6">
         <Container />
       </div>
     </div>
