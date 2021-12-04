@@ -8,22 +8,22 @@ export default function Payement() {
         </div>
       </div>
       <div className="flex justify-center mt-4">
-        <div className="border-l-2 w-36 h-28 flex flex-col justify-center text-center">
+        <div className="border-l-2 w-32 h-24 flex flex-col justify-center text-center">
           <div className="text-center font-bold">8</div>
           <div className="mt-2 text-xs text-gray-500">Awaiting</div>
         </div>
-        <div className="border-l-2 w-36 h-28 flex flex-col justify-center text-center relative">
-          <span className="absolute top-0 right-2 h-6 bg-red-500 w-6 rounded-full text-white">
+        <div className="border-l-2 w-32 h-24 flex flex-col justify-center text-center relative">
+          <span className="absolute top-0 right-2 h-4 bg-red-500 w-4 rounded-full text-white text-xs">
             !
           </span>
           <div className="text-center font-bold">5</div>
           <div className="mt-2 text-xs text-gray-500">In progress</div>
         </div>
-        <div className="border-l-2 w-36 h-28 flex flex-col justify-center text-center">
+        <div className="border-l-2 w-32 h-24 flex flex-col justify-center text-center">
           <div className="text-center font-bold">12</div>
           <div className="mt-2 text-xs text-gray-500">Completed</div>
         </div>
-        <div className="border-l-2 border-r-2 w-36 h-28 flex flex-col justify-center text-center">
+        <div className="border-l-2 border-r-2 w-32 h-24 flex flex-col justify-center text-center">
           <div className="text-center font-bold">4</div>
           <div className="mt-2 text-xs text-gray-500">Canceled</div>
         </div>
