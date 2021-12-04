@@ -1,7 +1,6 @@
 import { useReducer } from "react";
 import { TopNav } from "../data/nav";
 import { BottomNav } from "../data/nav";
-import logo from "../assets/logo.svg";
 import Collapse from "@kunukn/react-collapse";
 import Down from "./Down";
 import "../css/nav.scss";
@@ -27,11 +26,11 @@ function Block({ isOpen, nav, onToggle, children }) {
   return (
     <div className="block mt-1">
       <button
-        className="toggle flex px-2 py-2 rounded hover:bg-gray-200 justify-between w-11/12 m-auto"
+        className="toggle flex px-2 py-3 rounded hover:bg-blue-100 hover:text-blue-900 justify-between w-11/12 m-auto"
         onClick={onToggle}
       >
         <div className="flex">
-          <img src={nav.icon} alt="" width={25} />
+          {nav.icon}
           <div className="my-auto ml-3 text-sm text-gray-600">{nav.name}</div>
         </div>
         {nav.child && (
@@ -53,7 +52,12 @@ export default function Nav() {
       <div className="mt-4">
         <div className="flex  m-3 ml-3.5">
           <img src={logoKlamma} alt="" width={30} />
-          <div className="my-auto ml-2 font-bold text-xl">Klamma</div>
+          <div
+            className="my-auto ml-2 font-bold text-xl"
+            style={{ color: "#283747" }}
+          >
+            Klamma
+          </div>
         </div>
         {TopNav.map((nav, i) => {
           return (
@@ -66,7 +70,11 @@ export default function Nav() {
             >
               {nav.child &&
                 nav.child.map((child, i) => {
-                  return <div key={i}>{child.elem}</div>;
+                  return (
+                    <div key={i} className="my-2 ml-12 text-sm text-gray-600">
+                      {child.elem}
+                    </div>
+                  );
                 })}
             </Block>
           );
@@ -77,9 +85,9 @@ export default function Nav() {
           return (
             <div
               key={i}
-              className="flex mx-4 px-2 py-2 rounded hover:bg-gray-200 mt-1"
+              className="flex mx-4 px-2 py-3 rounded hover:bg-gray-200 mt-1"
             >
-              <img src={nav.icon} alt="" width={25} />
+              {nav.icon}
               <div className="my-auto ml-3 text-sm text-gray-600">
                 {nav.name}
               </div>

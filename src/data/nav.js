@@ -1,8 +1,15 @@
+import { ImHome } from "react-icons/im";
+import { BsCreditCard, BsPerson } from "react-icons/bs";
+import { GrTransaction } from "react-icons/gr";
+import { HiOutlineDocumentReport } from "react-icons/hi";
+import { TiContacts } from "react-icons/ti";
+import { FiSettings } from "react-icons/fi";
+
 export const TopNav = [
-  { icon: "logo192.png", name: "Overview" },
-  { icon: "logo192.png", name: "Cards" },
+  { icon: <ImHome size={20} />, name: "Overview" },
+  { icon: <BsCreditCard size={20} style={{ color: "grey" }} />, name: "Cards" },
   {
-    icon: "logo192.png",
+    icon: <GrTransaction size={20} style={{ color: "grey" }} />,
     name: "Payments",
     child: [
       { elem: "element 1" },
@@ -11,7 +18,7 @@ export const TopNav = [
     ],
   },
   {
-    icon: "logo192.png",
+    icon: <HiOutlineDocumentReport size={20} style={{ color: "grey" }} />,
     name: "Repots",
     child: [
       { elem: "element 1" },
@@ -19,10 +26,16 @@ export const TopNav = [
       { elem: "element 3" },
     ],
   },
-  { icon: "logo192.png", name: "Contacts" },
+  {
+    icon: <TiContacts size={20} style={{ color: "grey" }} />,
+    name: "Contacts",
+  },
 ];
 
 export const BottomNav = [
-  { icon: "logo192.png", name: "Settings" },
-  { icon: "logo192.png", name: "Account" },
+  {
+    icon: <FiSettings size={20} style={{ color: "grey" }} />,
+    name: "Settings",
+  },
+  { icon: <BsPerson size={20} style={{ color: "grey" }} />, name: "Account" },
 ];

@@ -15,7 +15,7 @@ const Container = () => {
       <div className="mt-2 flex">
         <div className="w-7/12">
           <Chart />
-          <div className="border-b-2 w-11/12 mt-8 m-auto"></div>
+          <div className="border-b-2 w-11/12 mt-4 m-auto"></div>
           <Payement />
           <Money />
         </div>

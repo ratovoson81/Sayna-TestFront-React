@@ -1,3 +1,5 @@
+import { HiOutlineLockClosed } from "react-icons/hi";
+
 export const Cards = [
   {
     name: "",
@@ -13,14 +15,14 @@ export const Cards = [
     numero: "5495 7381 3759 2321",
     date: "04 / 24",
     lock: false,
-    type: "master",
+    type: "visa",
   },
   {
     name: "Corporate",
     price: "1242.42 USD",
     numero: "5495 7381 3759 2321",
     date: "04 / 24",
-    lock: true,
+    lock: <HiOutlineLockClosed size={20} />,
     type: "master",
   },
   {

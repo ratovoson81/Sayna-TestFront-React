@@ -14,8 +14,8 @@ export default function Activity() {
         return (
           <div key={i} className="flex justify-between items-center mt-2">
             <div className="flex items-center">
-              <img src={item.icon} alt="" width={25} />
-              <div className="ml-2">
+              {item.icon}
+              <div className="ml-6">
                 <div className="text-sm text-gray-900 font-medium">
                   {item.name}
                 </div>
@@ -34,8 +34,8 @@ export default function Activity() {
         return (
           <div key={i} className="flex justify-between items-center mt-2">
             <div className="flex items-center">
-              <img src={item.icon} alt="" width={25} />
-              <div className="ml-2">
+              {item.icon}
+              <div className="ml-6">
                 <div className="text-sm text-gray-900 font-medium">
                   {item.name}
                 </div>

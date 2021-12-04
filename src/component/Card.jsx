@@ -1,9 +1,12 @@
 import { useState } from "react";
-import logo from "../assets/logo.svg";
 import { Cards } from "../data/card";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/card.css";
+import { RiMastercardFill, RiVisaLine } from "react-icons/ri";
+import masterColor from "../assets/master-color.png";
+import visa from "../assets/visa.png";
+import logoKlamma from "../assets/logo-klamma.png";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,6 +30,22 @@ const responsive = {
 export default function Card() {
   const [choose, setChoose] = useState(0);
 
+  function Icon({ type, index }) {
+    if (type === "master") {
+      if (choose === index) {
+        return <img src={masterColor} alt="" width={30} />;
+      } else {
+        return <RiMastercardFill size={30} />;
+      }
+    } else if (type === "visa") {
+      if (choose === index) {
+        return <img src={visa} alt="" width={30} />;
+      } else {
+        return <RiVisaLine size={30} />;
+      }
+    }
+  }
+
   return (
     <>
       <Carousel
@@ -38,14 +57,14 @@ export default function Card() {
           return (
             <div
               key={i}
-              className={`flex flex-col p-4 bg-white mx-3 h-48 rounded-lg justify-between relative cursor-pointer mb-8 mt-8 shadow-md bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 ${
+              className={`flex flex-col p-4 bg-white mx-3 h-44 rounded-lg justify-between relative cursor-pointer mb-8 mt-8 shadow-xl bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 ${
                 choose === i && "background"
               }`}
               onClick={() => setChoose(i)}
             >
               <div className="flex flex-wrap">
                 <h1 className="flex-auto text-xl font-semibold flex">
-                  <img src={logo} alt="" width={40} />
+                  <img src={logoKlamma} alt="" width={25} />
                   <span
                     className={`text-sm self-center ${
                       choose === i && "text-white"
@@ -54,7 +73,7 @@ export default function Card() {
                     {card.name}
                   </span>
                 </h1>
-                <div>{card.lock && <img src={logo} alt="" width={40} />}</div>
+                <div>{card.lock && card.lock}</div>
               </div>
               <div
                 className={`w-full flex-none mt-2 font-semibold ${
@@ -74,11 +93,11 @@ export default function Card() {
                 </div>
 
                 <div className="ml-auto mt-auto">
-                  <img src={logo} alt="" width={40} />
+                  <Icon type={card.type} index={i} />
                 </div>
               </div>
               {choose === i && (
-                <div className="absolute -bottom-8 left-1/2">0</div>
+                <div className="absolute -bottom-6 left-1/2 bg-blue-900 w-2 h-2 rounded shadow-lg"></div>
               )}
             </div>
           );

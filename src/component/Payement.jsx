@@ -1,6 +1,6 @@
 export default function Payement() {
   return (
-    <div className="mt-8 px-8">
+    <div className="mt-4 px-8">
       <div className="flex justify-between">
         <div className="font-bold">Int. Payments</div>
         <div className="text-sm text-gray-500 font-medium">
