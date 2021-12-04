@@ -23,4 +23,12 @@ export const Cards = [
     lock: true,
     type: "master",
   },
+  {
+    name: "Corporate",
+    price: "1242.42 USD",
+    numero: "5495 7381 3759 2321",
+    date: "04 / 24",
+    lock: true,
+    type: "master",
+  },
 ];

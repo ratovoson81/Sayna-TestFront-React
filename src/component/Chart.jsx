@@ -1,12 +1,12 @@
-import logo from "../assets/logo.svg";
+import donut from "../assets/donut.png";
 
 export default function Chart() {
   return (
-    <div className="flex mt-8 space-x-16">
+    <div className="flex mt-8 space-x-16 ml-12">
       <div className="flex justify-center">
         <div className="flex">
           <div className="m-auto">
-            <img src={logo} alt="" width={80} />
+            <img src={donut} alt="" width={70} />
           </div>
           <div className="ml-4 space-y-1 m-auto">
             <div className="font-bold">Credit Limit</div>
@@ -22,7 +22,7 @@ export default function Chart() {
       <div className="flex justify-center">
         <div className="flex">
           <div className="m-auto">
-            <img src={logo} alt="" width={80} className="m-auto" />
+            <img src={donut} alt="" width={70} className="m-auto" />
           </div>
           <div className="ml-4 space-y-1 m-auto">
             <div className="font-bold">Online Limit</div>

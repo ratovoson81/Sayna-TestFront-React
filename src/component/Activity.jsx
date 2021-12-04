@@ -9,7 +9,7 @@ export default function Activity() {
           View a report
         </button>
       </div>
-      <div className="text-sm mt-4 text-gray-600">Today</div>
+      <div className="text-sm mt-8 text-gray-600">Today</div>
       {Activities.map((item, i) => {
         return (
           <div key={i} className="flex justify-between items-center mt-2">
@@ -29,8 +29,7 @@ export default function Activity() {
           </div>
         );
       })}
-      <div className="text-sm mt-4 text-gray-600">Yesterday</div>
-      <div className="text-sm mt-4 text-gray-600">Today</div>
+      <div className="text-sm mt-8 text-gray-600">Yesterday</div>
       {YesterdayActivities.map((item, i) => {
         return (
           <div key={i} className="flex justify-between items-center mt-2">

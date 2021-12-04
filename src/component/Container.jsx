@@ -9,7 +9,7 @@ const Container = () => {
   return (
     <div className="m-8">
       <Title />
-      <div className="mt-8">
+      <div>
         <Card />
       </div>
       <div className="mt-2 flex">

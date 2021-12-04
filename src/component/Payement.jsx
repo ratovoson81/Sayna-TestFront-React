@@ -3,7 +3,7 @@ export default function Payement() {
     <div className="mt-8 px-8">
       <div className="flex justify-between">
         <div className="font-bold">Int. Payments</div>
-        <div className="text-sm text-gray-500 font-semibold">
+        <div className="text-sm text-gray-500 font-medium">
           the last 30 days
         </div>
       </div>
