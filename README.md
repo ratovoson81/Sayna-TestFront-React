@@ -14,7 +14,7 @@ Open http://localhost:3000/
 
 - La liste des cartes de banque est animé en survol et sélectable.
 - Les cartes selectionnés auront un background en fonction de leur type (master card: gradient black, visa: gradient yellow, ...)
-- Dans la navigation, les sections "Payments et Repots" contienennt des sous ensembles ouvrable.
+- Dans la navigation, les sections "Payments et Repots" contiennent des sous-ensembles ouvrable
 
 ## Lien en ligne
 
