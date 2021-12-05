@@ -4,7 +4,6 @@ import { BottomNav } from "../data/nav";
 import Collapse from "@kunukn/react-collapse";
 import Down from "./Down";
 import "../css/nav.scss";
-import logoKlamma from "../assets/logo-klamma.png";
 
 const initialState = [false, false, false];
 function reducer(state, { type, index }) {
@@ -26,7 +25,7 @@ function Block({ isOpen, nav, onToggle, children }) {
   return (
     <div className="block mt-1">
       <button
-        className="toggle flex px-2 py-3 rounded hover:bg-blue-100 hover:text-blue-900 justify-between w-11/12 m-auto"
+        className="toggle flex px-2 py-3 rounded hover:bg-gray-100 justify-between w-11/12 m-auto"
         onClick={onToggle}
       >
         <div className="flex">
@@ -51,7 +50,11 @@ export default function Nav() {
     <div className="h-full flex flex-col justify-between pb-4 fixed w-1/6 ">
       <div className="mt-4">
         <div className="flex  m-3 ml-3.5">
-          <img src={logoKlamma} alt="" width={30} />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/logo-klamma.png?alt=media&token=df912a99-1785-4168-a638-e2493405e25a"
+            alt=""
+            width={30}
+          />
           <div
             className="my-auto ml-2 font-bold text-xl"
             style={{ color: "#283747" }}
@@ -85,7 +88,7 @@ export default function Nav() {
           return (
             <div
               key={i}
-              className="flex mx-4 px-2 py-3 rounded hover:bg-gray-200 mt-1"
+              className="flex mx-4 px-2 py-3 rounded hover:bg-gray-100 mt-1"
             >
               {nav.icon}
               <div className="my-auto ml-3 text-sm text-gray-600">

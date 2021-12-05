@@ -12,7 +12,7 @@ const Container = () => {
       <div>
         <Card />
       </div>
-      <div className="mt-2 flex">
+      <div className="mt-2 md:flex">
         <div className="w-7/12">
           <Chart />
           <div className="border-b-2 w-11/12 mt-4 m-auto"></div>

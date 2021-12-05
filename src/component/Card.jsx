@@ -4,9 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../css/card.css";
 import { RiMastercardFill, RiVisaLine } from "react-icons/ri";
-import masterColor from "../assets/master-color.png";
-import visa from "../assets/visa.png";
-import logoKlamma from "../assets/logo-klamma.png";
 
 const responsive = {
   superLargeDesktop: {
@@ -33,13 +30,25 @@ export default function Card() {
   function Icon({ type, index }) {
     if (type === "master") {
       if (choose === index) {
-        return <img src={masterColor} alt="" width={30} />;
+        return (
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/master-color.png?alt=media&token=1e3931be-af73-488b-b0e5-859f36fe906c"
+            alt=""
+            width={30}
+          />
+        );
       } else {
         return <RiMastercardFill size={30} />;
       }
     } else if (type === "visa") {
       if (choose === index) {
-        return <img src={visa} alt="" width={30} />;
+        return (
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/visa.png?alt=media&token=169a1449-f13e-446f-b261-e8d704e34e25"
+            alt=""
+            width={30}
+          />
+        );
       } else {
         return <RiVisaLine size={30} />;
       }
@@ -64,7 +73,11 @@ export default function Card() {
             >
               <div className="flex flex-wrap">
                 <h1 className="flex-auto text-xl font-semibold flex">
-                  <img src={logoKlamma} alt="" width={25} />
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/logo-klamma.png?alt=media&token=df912a99-1785-4168-a638-e2493405e25a"
+                    alt=""
+                    width={25}
+                  />
                   <span
                     className={`text-sm self-center ${
                       choose === i && "text-white"

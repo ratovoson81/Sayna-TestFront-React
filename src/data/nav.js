@@ -21,9 +21,9 @@ export const TopNav = [
     icon: <HiOutlineDocumentReport size={20} style={{ color: "grey" }} />,
     name: "Repots",
     child: [
-      { elem: "element 1" },
-      { elem: "element 2" },
-      { elem: "element 3" },
+      { elem: "element 4" },
+      { elem: "element 5" },
+      { elem: "element 6" },
     ],
   },
   {
