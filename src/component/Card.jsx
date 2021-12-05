@@ -35,6 +35,7 @@ export default function Card() {
             src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/master-color.png?alt=media&token=1e3931be-af73-488b-b0e5-859f36fe906c"
             alt=""
             width={30}
+            className="mb-2"
           />
         );
       } else {
@@ -46,7 +47,8 @@ export default function Card() {
           <img
             src="https://firebasestorage.googleapis.com/v0/b/test-sayna-fe3c4.appspot.com/o/visa.png?alt=media&token=169a1449-f13e-446f-b261-e8d704e34e25"
             alt=""
-            width={30}
+            width={33}
+            className="mb-3"
           />
         );
       } else {
