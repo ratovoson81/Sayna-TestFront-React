@@ -67,8 +67,8 @@ export default function Card() {
             <div
               key={i}
               className={`flex flex-col p-4 bg-white mx-3 h-44 rounded-lg justify-between relative cursor-pointer mb-8 mt-8 shadow-xl bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 ${
-                choose === i && "background"
-              }`}
+                choose === i && i % 2 === 0 && "background"
+              } ${choose === i && "bg-gradient-to-tr from-black to-gray-900"}`}
               onClick={() => setChoose(i)}
             >
               <div className="flex flex-wrap">
