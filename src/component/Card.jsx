@@ -67,8 +67,8 @@ export default function Card() {
             <div
               key={i}
               className={`flex flex-col p-4 bg-white mx-3 h-44 rounded-lg justify-between relative cursor-pointer mb-8 mt-8 shadow-xl bg-cover transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 ${
-                choose === i && i % 2 === 0 && "background"
-              } ${choose === i && "bg-gradient-to-tr from-black to-gray-900"}`}
+                choose === i && card.onSelect
+              } `}
               onClick={() => setChoose(i)}
             >
               <div className="flex flex-wrap">
@@ -79,7 +79,7 @@ export default function Card() {
                     width={25}
                   />
                   <span
-                    className={`text-sm self-center ${
+                    className={`text-sm self-center ml-2 ${
                       choose === i && "text-white"
                     }`}
                   >
